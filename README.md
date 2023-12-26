@@ -22,14 +22,40 @@ Follow these steps to set up and run Stringlist in C++:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone 
+   git clone https://github.com/Daksh2060/undo-method-cpp
    ```
 
-2. 
+2. If using the provided test file to usage, use the provided makefile:
 
    ```bash
-   make
+   make test
+   ./test
    ```
+
+3. To include in your own file, include the header in your project:
+
+    ```bash
+   #include "undo.h"
+   ```
+
+4. To use the class, you must create a string list, named list1 in this example :
+
+    ```bash
+    Stringlist list1;
+    ```
+
+5. You can then manipulate this list using class methods, for example:
+
+    ```bash
+    list1.insert_back("Hello");
+    ```
+
+    For the full list of methods, see the public `Stringlist` class in `undo.h`
+
+6. To undo the last operation, call undo:
+    ```bash
+    list1.undo();
+    ```
 
 ## Contact
 
