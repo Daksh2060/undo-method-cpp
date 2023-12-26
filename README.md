@@ -13,7 +13,7 @@ This C++ project implements a dynamic array class called Stringlist, which allow
 
 ## How does it work?
 
-The `undo` method works by using a set of counter operations in response to every action. Everytime something is done to the stringlist, a private stack takes note of what action was done using a series of keywords. When `undo` is called, the stack is popped, and the corresponding keyword is assciated with an inverse operation that cancels out that action. For example, if an item is added to the back of the list, the stack notes the key phrase `UNDO_INSERT_BACK`, and when undo is called, this keyphrase is read and the stringlist remove the last item. This applies for all non-idempotent operations available. 
+The `undo` method works by using a set of counter operations in response to every action. Every time something is done to the string list, a private stack takes note of what action was done using a series of keywords. When `undo` is called, the stack is popped, and the corresponding keyword is associated with an inverse operation that cancels out that action. For example, if an item is added to the back of the list, the stack notes the key phrase `UNDO_INSERT_BACK`, and when undo is called, this keyphrase is read and the string list removes the last item. This applies to all non-idempotent operations available. 
 
 ## Installation and Use
 
