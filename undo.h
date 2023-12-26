@@ -208,11 +208,15 @@ public:
 
     // Returns the index of the first occurrence of s in the list, or -1 if s is not in the lst.
     int index_of(const string &s) const{
+
         for(int i = 0; i < sz; i++){
+
             if(arr[i] == s){
+
                 return i;
             }
         }
+
         return -1;
     }
 
